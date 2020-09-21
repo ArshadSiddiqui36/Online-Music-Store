@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  <!-- Awesome Font Link -->
+	<style>
+		body
+		{
+			background-image: url(AlbumArt/MusicTheme.jpg);
+			background-size: cover;
+			/*background-position: center;*/
+			background-repeat: no-repeat;
+		}
+		h1
+		{
+			/*border-bottom: 1px solid #000000; */
+			text-align: left;
+			width: 100%;
+			height: 60px;
+			line-height: 100px;
+			font-family: Arial;
+			text-shadow: 1px 1px 2px gray;
+		}
+		hr
+		{
+			border-radius: 50%;
+			box-shadow: 1px 1px 2px gray;
+		}
+		
+		.ContactUsBox
+		{
+			display: grid;
+			grid-template-columns: 60% 40%;
+			/*position: relative;*/
+			margin: 2% auto;
+			height: 500px;
+			width: 70%;
+			background: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+		}
+
+		.LeftBox
+		{
+			top: 0;
+			left: 0;
+			box-sizing: border-box;
+			padding: 40px;
+			width: 100%;
+			height: 500px;
+			font-family: sans-serif;
+			/*border : 1px solid black;*/
+		}
+		.RightBox
+		{
+			top: 0;
+			right: 0;
+			box-sizing: border-box;
+			width: 100%;
+			height: 500px;
+			font-family: sans-serif;
+			/*background-color: rgba(0,0,0,0.6);*/
+			background-image: url(AlbumArt/Lovepik_com-500564268-the-alphabet-on-the-keyboard.jpg);
+			background-size: 1000px 500px;
+			background-position: cover;
+			background-repeat: no-repeat;
+			display: grid;
+		}
+		.RightBox h3
+		{
+			padding: 30px;
+			font-size: 28px;
+			height: 20px;
+			line-height: 20px;
+			color: rgba(0,0,0,.8);
+			text-align: center;
+			text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+		}
+		.details
+		{
+			padding-left: 50px;
+			margin-top: 5px;
+			text-align: left;
+			font-size: 16px;
+			color: rgba(0,0,0,0.8);
+		}
+		.details i
+		{
+			margin-right: 20px;
+			font-size: 18px;
+		}
+		ul
+		{
+			list-style: none;
+		}
+		ul li
+		{
+			text-align: center;
+			display: inline-block;
+			padding: 15px;
+			font-size: 25px;
+			text-shadow: 0px 0px 1px black;
+		}
+		.fa-facebook
+		{
+			color: #34508e;
+		}
+		.fa-facebook:hover
+		{
+			color: red;
+		}
+		.fa-twitter
+		{
+			color: #55acee;
+		}
+		.fa-twitter:hover
+		{
+			color: green;
+		}
+		.fa-linkedin
+		{
+			color: #007bb5;
+		}
+		.fa-linkedin:hover
+		{
+			color: tomato;
+		}
+		.fa-instagram
+    	{
+      		color: #fb5958;
+   		}
+   		.fa-instagram:hover
+    	{
+      		color: steelblue;
+   		}
+   		.fa-google-plus
+    	{
+      		color: #dd4b39;
+   		}
+   		.fa-google-plus:hover
+    	{
+      		color: darkblue;
+   		}
+		
+		form h3
+		{
+			padding-left: 30px;
+			margin-top: 10px;
+			text-align: center;
+			font-size: 28px;
+			height: 20px;
+			line-height: 20px;
+			color: rgba(0,0,0,.6);
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		}
+		input[type="text"], input[type="tel"], input[type="email"]
+		{
+			display: inline;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			padding: 4px;
+			width: 100%;
+			height: 32px;
+			border: none;
+			outline: none;
+			border-bottom: 1px solid #aaa;
+			font-family: sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			transition: 0.2s ease;
+		}
+		textarea
+		{
+			display: block;
+			width: 100%;
+			height: 70px;
+			padding: 4px;
+		}
+
+		input[type="submit"]
+		{
+			margin-bottom: 28px;
+			width: 160px;
+			height: 32px;
+			background: #f44336;
+			border: none;
+			border-radius: 2px;
+			color: #fff;
+			font-family: sans-serif;
+			font-weight: 500;
+			text-transform: uppercase;
+			transition: 0.2s ease;
+			cursor: pointer;
+		}
+		input[type="radio"], label, span
+		{
+			margin-bottom: 20px;
+			color: rgba(0,0,0,.6);
+		}
+
+		input[type="submit"]:hover,
+		input[type="submit"]:focus
+		{
+			background: #ff5722;
+			transition: 0.2s ease;
+		}
+		input[type="checkbox"]
+		{
+			margin-left: 40px;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+	<h1>Contact Us</h1>
+		<hr size="2" color="black">
+
+		<div class="ContactUsBox">
+		 <div class="LeftBox">
+		 	<form method="post" action="#SignUp.php">
+		 		<h3 class="Title">Send us a message</h1>
+		 		<input type="text" name="firstName" placeholder="First Name" required="">
+		 		<input type="text" name="laststName" placeholder="Last Name" required="">
+		 		<input type="tel" name="contactNumber" placeholder="Contact Number" required="">
+		 		<input type="email" name="email" placeholder="E-mail" required="">
+		 		<label>Gender:</label>
+		 		<input type="radio" name="gender" value="male" required=""><span>Male</span>
+		 		<input type="radio" name="gender" value="female" required=""><span>Female</span>
+		 		<input type="checkbox" name="confirm" required=""><span style="font-size: 14px;">Confirm Your Detaile And Checked The Box</span>
+		 		<textarea rows="10" cols="28" placeholder="Type your query"></textarea><br>
+		 		<center><input type="submit" name="submit" value="Submit" onclick="Validate(this.form)"></center>
+		 	</form>
+		 </div>
+
+		 <div class="RightBox">
+		 	<h3 class="title">Contact information</h3>
+		 	<h4 class="details"><i class="fa fa-mobile"></i>9161757683</h4>
+		 	<h4 class="details"><i class="fa fa-envelope"></i>arshadsiddiqui36@gmail.com</h4>
+		 	<h4 class="details"><i class="fa fa-map-marker"></i>Lovely professional University</h4>
+		 	<ul>
+		 		<li><a href=""><i class="fa fa-facebook"></i></a></li>
+		 		<li><a href=""><i class="fa fa-twitter"></i></a></li>
+		 		<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+		 		<li><a href=""><i class="fa fa-instagram"></i></a></li>
+		 		<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+		 	</ul>
+		 	
+		 </div>
+		</div>
+
+		<script>
+
+    function Validate(form)
+    {
+      var fn=form.firstName.value;
+      var ln=form.laststName.value;
+      var g=form.gender.value;
+      var cn=form.contactNumber.value;
+      var e=form.email.value;
+      var cb=form.confirm.value;
+      if(fn!=0 && ln!=0 && g!=0 && cn!=0 && e!=0)
+      {
+        if(cb!=0)
+        {
+        alert("Your Query Submitted Successfuly, Go To Home Page");
+        window.open("index.html")  
+        }
+        else
+        {
+        alert("Please confirm your details and checked box.");
+        }
+      }
+      else
+      {
+        alert("Please, fill the all required details first.");
+      }
+}
+    </script>
+
+
+</body>
+</html>

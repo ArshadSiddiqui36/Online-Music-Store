@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Online Music Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  <!-- Awesome Font CDN Link -->
+
+
+	<link rel="stylesheet" href="ism/css/my-slider.css"/>  <!-- Image Slider Maker Link -->
+	<script src="ism/js/ism-2.2.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">  <!-- Main Style Link -->
+	<style>
+		
+
+	</style>
+
+</head>
+
+<body>
+	<div class="main-container">  <!-- ........................................Main Container.................................... -->
+
+		<header>      <!-- ........................................Header.................................... -->
+			<div class="logo">
+				<a href="#Home"><img src="Images/LogoF.jpg" alt="Online Music Store" class="logo"></a>
+			</div>
+			<div class="header-section">
+				<div class="header-sub-section">
+					<nav>
+						<ul class="pageLink">
+							<li class="pageLink-list"><a href="#Home"><i class="fa fa-home"></i>Home</a></li>
+							<li class="pageLink-list"><a href="Portfolio.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+							<li class="pageLink-list"><a href="Gallery.html"><i class="fa fa-image"></i>Gallery</a></li>
+							<li class="pageLink-list"><a href="AboutUs.html"><i class="fa fa-id-card"></i>About Us</a></li>  <!--id-badge, info, info-cicle -->
+							<li class="pageLink-list"><a href="ContactUs.html"><i class="fa fa-address-book"></i>Contact Us</a></li>
+						</ul>
+					</nav>				
+				</div>
+				<div class="header-sub-section">
+					<div class="nav2">
+						<div class="SearchBox">
+						<select>
+							<option>Song</option><option>Album</option><option>Artist</option>
+						</select>
+						<input type="search" name="search" id="search">
+						<a href="#search"><i class="fa fa-search"></i></a>
+						</div>
+						<ul class="signUp-signIn">
+							<li class="signUp"><a href="SignUp.html">Sign Up</a></li>
+							<li class="signIn"><a href="SignIn.html">Sign In</a></li>
+						</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="banner-comtainer"> <!-- ........................................Bannner Container.................................... -->
+
+			<div class='container'>
+				<div class="ism-slider" data-play_type="loop" id="my-slider">
+					<ol>
+						<li>
+							<img src="Images/Slide1.png">
+							<!-- <div class="ism-caption ism-caption-0">Music Hurts You, You Feel No Pain</div> -->
+						</li>
+						<li>
+							<img src="Images/Slide2.jpg">
+							<!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+						</li>
+						<li>
+							<img src="Images/Slide3.jpg">
+							<!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+						</li>
+						<li>
+							<img src="Images/Slide4.jpg">
+							<!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+						</li>
+						<li>
+							<img src="Images/Slide5.jpg">
+							<!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+						</li>
+					</ol>
+				</div>
+
+			</div>
+
+			<div class="musicPlayer-container"> <!-- ........................................Music Player Container.................................... -->
+				<div class="musicPlayer-section">
+					<div class="musicPlayer-subsection">
+						<div class="typeOfSongList">
+							<ul>
+								<li><a href="#Bollywood">Bollywood Songs</a></li>
+								<li><a href="#Hollywood">Hollywood Songs</a></li>
+								<li><a href="#Punjabi">Punjabi Songs</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="musicPlayer-subsection">
+						<div class="typeOfSongList2">
+							<ul>
+								<li><a href="#Album">Album</a></li>
+								<li><a href="#Song">Song</a></li>
+								<li><a href="#Artist">Artist</a></li>
+								<li><a href="#Domwnload">Domwnload<i class="fa fa-download"></i></a></li>
+							</ul>
+						</div>
+
+				<div class="listOfSongs">
+					<ul>
+						<li>Ek Ladki Ko Dekha Toh Aisa Laga - Title Song</li>
+						<li>Mungda</li>
+						<li>Teri Mitti</li>
+						<li>First Class</li>
+						<li>Coca Cola</li>
+					</ul>
+				</div>
+
+					</div>
+				</div>
+				<div class="musicPlayer-AudioPlayer-section">  <!-- ............Music Player - Audio Player section........................... -->
+
+<!-- ......................................End HTML Of Audio Player Section............................................ -->
+					
+			
+<div class="AudioPlayerContainer">
+	<div class="AlbumArt">
+		<div id="AlbumArtImage">
+			<!-- <img src="ELKDTAL.jpg">			 -->
+		</div>
+
+	</div>
+
+	<div class="AboutAudio">
+		<div class="TitleArtistAlbum">
+			<i class="fa fa-music"></i>
+			<!-- <img src="Images/Icons/title.png" alt="Tittle"> -->
+			<!-- <marquee width=95%> --><p id="Title">Ek Ladki Ko Dekha Toh Aisa Laga - Title Song</p><!-- </marquee> -->
+		</div>
+		<div class="TitleArtistAlbum">
+			<i class="fa fa-microphone"></i>
+			<!-- <img src="Images/Icons/artist.png" alt="Artist"> -->
+			<!-- <marquee> --><p id="Artist">Darshan Raval, Rochak Kohli</p><!-- </marquee> -->
+		</div>
+		<div class="TitleArtistAlbum">
+			<i class="fa fa-film"></i>
+			<!-- <img src="Images/Icons/album.png" alt="Album"> -->
+			<!-- <marquee> --><p id="Album">Ek Ladki Ko Dekha Toh Aisa Laga (2019)</p><!-- </marquee>-->	
+		</div>
+	</div>
+
+	<audio id="aud" timeupdate="upadteData()" playing=playng() durationchange="updateDur()" onended="songEnd()">
+		<source src="Audio/Ek Ladki Ko Dekha Toh Aisa Laga.mp3" type="audio/mpeg">
+		</audio>
+
+		<div class="ToolsAudio">
+			
+			<div class="ProgBarTime">
+				<div class="ProgBarbtn"><input id="prg" type="range" min="0" max="100" value="0" oninput="seek(this.value)"/></div>
+
+				<div class="TimeVolumebtn">
+					<p id="crntTime">00:00</p>
+					<div id="VolumeContainer">
+					<!-- <i class="fa fa-volume-up" onclick="muteUnmute()" id="volbtn"></i> -->
+						<i class="fa" onclick="muteUnmute()" id="volbtn"> &#xf028; </i>
+						<input id="prgvol" type="range" min="0" max="100" value="100" oninput="volume(this.value)"/>
+						<div id="volume_value">100</div>
+					</div>
+					<p id="ttlTime">03:46</p>
+				</div>
+				
+			</div>
+
+			<div class="ActionBtn">
+				<div id="replaybtn" class="btn" onclick="replaySong()"><p id="rplybtn"><i class="fa fa-retweet"></i></p></div>
+				<div id="backwardbtn" class="btn" onclick="backwardSong()"><p id="bkwrdbtn"><i class="fa fa-fast-backward"></i></p></div>
+				<div id="playbtn" class="btn" onclick="playSong()"><p id="plybtn"><i class="fa fa-play"></i></p></div>
+				<div id="forwardbtn" class="btn" onclick="forwardSong()"><p id="frwrdbtn"><i class="fa fa-fast-forward"></i></p></div>
+				<div id="randombtn" class="btn" onclick="randomSong()"><p id="rndmbtn"><i class="fa fa-random"></i></p></div>	
+			</div>
+
+		</div>
+	</div>
+
+
+<!-- ......................................End HTML Of Audio Player Section............................................ -->
+
+
+
+				</div>
+			</div>
+
+			<div class="latestMusic-container">      <!-- ........................................Latest Music Container.................................... -->
+				<div class="typeOfSong"><h1>Latest Bollywood Songs</h1></div>
+				<div class="latestMusic-subcontainer">
+					<div class="latestMusic-subcontainer1"></div>
+					<div class="latestMusic-subcontainer2"></div>
+					<div class="latestMusic-subcontainer3"></div>
+					<div class="latestMusic-subcontainer4"></div>
+					<div class="latestMusic-subcontainer5"></div>
+				</div>
+				<div class="typeOfSong"><h1>Latest Punjabi Songs</h1></div>
+				<div class="latestMusic-subcontainer">
+					<div class="latestMusic-subcontainer6"></div>
+					<div class="latestMusic-subcontainer7"></div>
+					<div class="latestMusic-subcontainer8"></div>
+					<div class="latestMusic-subcontainer9"></div>
+					<div class="latestMusic-subcontainer10"></div>
+				</div>
+				<div class="typeOfSong"><h1>Latest Hollywood Songs</h1></div>
+				<div class="latestMusic-subcontainer">
+					<div class="latestMusic-subcontainer11"></div>
+					<div class="latestMusic-subcontainer12"></div>
+					<div class="latestMusic-subcontainer13"></div>
+					<div class="latestMusic-subcontainer14"></div>
+					<div class="latestMusic-subcontainer15"></div>
+				</div>
+			</div>
+
+			<footer>      <!-- ........................................Footer.................................... -->
+			
+			<div class="footerSection1">
+				<h4 class="TagLine">Online Music Store is an Entertainment Plateform, Which is provide a variety in collection of music from golden era to latest in trained. It provides of feature to customize tracks on your choice, Like you can costomize as per your favourite Artist, Albums, Regional Languages and weekly top 15 collection</h4>
+				<div class="FoolowUs">
+					<h2>FOLLOW US</h2>
+					<ul>
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+						<li><a href=""><i class="fa fa-github"></i></a></li>
+						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+						<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footerSection2">
+			<a href="#TermsOfUse">Terms Of Use</a>	
+			<a href="#PrivacyPolicy"><span>Privacy Policy</span></a>	
+			<a href="#Feedback">Feedback</a>
+			<h5 class="CopyRight"><i class="fa fa-copyright"></i>Online Music Store Ltd. 2019, All Rights Reserved.</h5>  <!-- ...... &#9400...... -->
+			</div>
+
+			</footer>
+
+		</div>
+
+
+
+<!-- ......................................End JavaScript Of Audio Player Section............................................ -->
+
+<script>
+	// alert("Online Music Player");
+
+// var volume=0;
+var playing=0;
+var song=0;
+var album=0;
+var artist=0;
+
+// Start Section Of Source File...........................................................................................
+
+var songs=['Audio/First Class.mp3', 'Audio/Mungda.mp3', 'Audio/Teri Mitti.mp3', 'Audio/Coca Cola.mp3', 'Audio/Ek Ladki Ko Dekha Toh Aisa Laga.mp3', 'Audio/'];
+
+
+var title=['First Class','Mungda','Teri Mitti', 'Coca Cola', 'Ek Ladki Ko Dekha Toh Aisa Laga - Title Song'];
+
+
+var artists=['Arijit Singh, Neeti Mohan', 'Jyotica Tangri, Shaan, Subhro Ganguly', 'B Praak', 'Tony Kakkar, Neha Kakkar, Young Desi', 'Darshan Raval, Rochak Kohli'];
+
+
+var albums=['Kalank (2019)', 'Total Dhamal (2019)', 'Kesari (2019)', 'Luka Chuppi (2019)', 'Ek Ladki Ko Dekha Toh Aisa Laga (2019)'];
+
+
+var albumart=['AlbumArt/KALANK.jpg', 'AlbumArt/TOTALDHAMAL.jpg', 'AlbumArt/Kesari.jpg', 'AlbumArt/LukaChuppi.jpg', 'AlbumArt/ELKDTAL.jpg'];
+
+
+// End Section Of Source File...........................................................................................
+
+
+
+function playSong()
+{
+	var audio=document.getElementById("aud");
+	var slider=document.getElementById("prg");
+	var current=document.getElementById("crntTime");
+	var total=document.getElementById("ttlTime");
+
+	slider.max = 226.332;
+	
+   //Event listeners
+   audio.addEventListener('durationchange', function()
+   {
+   	slider.max = audio.duration;
+   	// console.log(slider.max);
+   	var minutes = "0" + Math.floor(audio.duration / 60);
+   	var seconds = "0" +  Math.floor(audio.duration - minutes * 60);
+   	total.innerHTML = minutes.substr(-2) + ":" + seconds.substr(-2);
+   });
+
+   audio.addEventListener('timeupdate', function()
+   {
+   	slider.value = audio.currentTime;
+   	var minutes = "0" + Math.floor(audio.currentTime / 60);
+   	var seconds = "0" +  Math.floor(audio.currentTime - minutes * 60);
+   	current.innerHTML= minutes.substr(-2) + ":" + seconds.substr(-2);
+   });
+
+
+   // audio.addEventListener('error',function(){alert(this.error.message);});
+   // audio.addEventListener('canplay',function()
+   // {
+   // document.getElementById("loader").style.display='none';
+   // audio.play();
+   // });
+   // audio.addEventListener('loadstart',function(){
+   //     document.getElementById("loader").style.display='block';
+   // }
+   // );
+
+   
+   
+    //Check if playing
+    if(playing===0)
+    { 
+     
+    	audio.play();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML= '<i class="fa fa-pause">';
+    	playing=1;
+    }
+    else
+    {
+    	audio.pause();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML='<i class="fa fa-play">';
+    	playing=0;
+    }
+}
+
+function forwardSong()
+{
+	var audio=document.getElementById("aud");
+	var titlename=document.getElementById("Title");
+	var artistname=document.getElementById("Artist");
+	var albumname=document.getElementById("Album");
+	var albumpic=document.getElementById("AlbumArtImage");
+	song=song+1;
+	album=album+1;
+	artist=artist+1;
+
+    // aud.load();
+    aud.src=songs[song];
+    albumpic.style.backgroundImage= "url("+albumart[song]+")";
+    titlename.innerHTML=title[song];
+    artistname.innerHTML=artists[artist];
+    albumname.innerHTML=albums[album];
+
+    if(playing===1)
+    { 
+
+    	audio.play();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML= '<i class="fa fa-pause">';
+    	playing=1;
+    }
+    else
+    {
+    	audio.pause();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML='<i class="fa fa-play">';
+    	playing=0;
+    }
+}
+function backwardSong()
+{
+	var audio=document.getElementById("aud");
+	var titlename=document.getElementById("Title");
+	var artistname=document.getElementById("Artist");
+	var albumname=document.getElementById("Album");
+	var albumpic=document.getElementById("AlbumArtImage");
+	song=song-1;
+	artist=artist-1;
+	album=album-1;
+    // aud.load();
+    aud.src=songs[song];
+    albumpic.style.backgroundImage= "url("+albumart[song]+")";
+    titlename.innerHTML=title[song];
+    artistname.innerHTML=artists[artist];
+    albumname.innerHTML=albums[album];
+
+    if(playing===1)
+    { 
+
+    	audio.play();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML= '<i class="fa fa-pause">';
+    	playing=1;
+    }
+    else
+    {
+    	audio.pause();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML='<i class="fa fa-play">';
+    	playing=0;
+    }
+
+
+}
+
+function seek(val)
+{
+	var audio=document.getElementById("aud");
+	audio.currentTime=val;
+}
+
+
+var volbtn = document.getElementById("volbtn");
+
+var audio = document.getElementById("aud");
+
+var valume_value = document.getElementById("volume_value");
+
+// Volume Controler ...................................
+
+function volume(val) {
+	var av = audio.volume = val / 100;
+	// console.log(av);
+
+	valume_value.innerHTML = val;
+
+	if(av == 0.0) {
+		// console.log(av);
+		// console.log("Silent");
+		volbtn.innerHTML = "&#xf026;";
+	}
+	else if(av <= 0.5){
+		// console.log("Medium");
+		volbtn.innerHTML = "&#xf027;";	
+	}
+	else{
+		// 1.0
+		// console.log("High");
+		volbtn.innerHTML = "&#xf028;";
+	}
+}
+
+// Mute & Unmute ......................................
+
+function muteUnmute() {
+
+	// volbtn.classList.toggle("fa-volume-mute");
+
+	if(audio.muted == false) {
+		// console.log("Mute");
+		audio.muted = true;
+		volbtn.innerHTML = "&#xf026;";
+
+	}
+	else {
+		// console.log("Unmute");
+		audio.muted = false;
+		volbtn.innerHTML = "&#xf028;";
+	}	
+}
+
+
+
+function songEnd()
+{
+    // playbt=document.getElementById("plybtn");
+    // playbt.innerHTML='<i class="fa fa-play">';
+
+    var audio=document.getElementById("aud");
+	var titlename=document.getElementById("Title");
+	var artistname=document.getElementById("Artist");
+	var albumname=document.getElementById("Album");
+	var albumpic=document.getElementById("AlbumArtImage");
+	song=song-1;
+	artist=artist-1;
+	album=album-1;
+    // aud.load();
+    aud.src=songs[song];
+    albumpic.style.backgroundImage= "url("+albumart[song]+")";
+    titlename.innerHTML=title[song];
+    artistname.innerHTML=artists[artist];
+    albumname.innerHTML=albums[album];
+    if(playing===1)
+    { 
+
+    	audio.play();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML= '<i class="fa fa-pause">';
+    	playing=1;
+    }
+    else
+    {
+    	audio.pause();
+    	playbt=document.getElementById("plybtn");
+    	playbt.innerHTML='<i class="fa fa-play">';
+    	playing=0;
+    }
+}
+
+// function muteUnmute()
+// {
+// 	if(volume===0)
+// 	{
+// 	var mute=document.getElementById("volbt");
+// 	volbtn.innerHTML='<i class="fa fa-volume-down">';
+// 	var audio=document.getElementById("aud");
+// 	audio.volume=0;
+// 	}
+// 	else
+// 	{
+// 	volbtn.innerHTML='<i class="fa fa-volume-up">';
+// 	var audio=document.getElementById("aud");
+// 	audio.volume=val/100;
+// 	}
+// }
+
+
+</script>
+
+<!-- ......................................End JavaScript Of Audio Player Section............................................ -->
+
+
+
+	</body>
+
+	</html>

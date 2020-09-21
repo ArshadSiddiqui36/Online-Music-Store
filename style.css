@@ -1,0 +1,910 @@
+		/*.........................................................Main CSS..........................................................*/
+
+		*			/*......................All Selected.......................*/
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body 		/*......................Body.......................*/
+		{
+			margin: 12px 8px;
+			/*margin-top: 12px;*/
+			background-color: gray;
+		}
+		.main-container		/*.................Main Container....................*/
+		{
+			display: grid;
+		}
+
+
+/*.......................................................................................................................................*/
+
+
+		header 		/*......................Header.......................*/
+		{
+			width: 100%;
+			height: 100px;
+			margin-top: -8px;
+			/*position: relative;*/
+			display: grid;
+			grid-template-columns: 500px auto;
+			/*border: 1px solid black;*/
+			/*background-color: #2593F0;*/
+			background-color: gray;
+			font-family: Arial;
+			z-index: 3;
+			box-shadow: 0px 2px 4px 0px black;
+		}
+		.header-section 		/*......................Header Section.......................*/
+		{
+			display: grid;
+			grid-template-rows: auto auto;
+/*				border: 1px solid black;*/
+			box-shadow: 0px 0px 1px 0px grey;
+		}
+		.header-sub-section 		/*......................Header Sub Section.......................*/
+		{
+			/*border: 1px solid black;*/
+		}
+		.logo  /*......................Logo.......................*/
+		{
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			/*border: 1px solid black;*/
+			/*box-shadow: 0px 0px 2px 0px black;*/
+		}
+		nav ul	/*......................Page Link.......................*/
+		{
+			display: grid;
+/*			grid-template-columns: 200px 200px 200px 200px 200px;*/
+            grid-template-columns: auto auto auto auto auto;
+		}
+		nav ul li
+		{
+			list-style: none;
+			box-sizing: border-box;
+			line-height: 50px;
+			text-align: center;
+/*			border: 1px solid black;*/
+		}
+		nav ul li a
+		{
+			text-decoration: none;
+			display: block;
+/*			background-color: #09E4F8;*/
+			background-color: rgba(0,0,0,0.2);
+			color: rgba(255,255,255,1);
+			box-shadow: 0px 1px 2px 0px black;
+			text-shadow: 1px 1px 2px black;
+		}
+		nav ul li a:hover 		/*......................Page Link Hover Effect.......................*/
+		{
+			transition: 0.2s ease;
+			background-color: red;
+			color: white;
+		}
+		.nav2
+		{
+			display: grid;
+			grid-template-columns: auto auto;
+			box-sizing: border-box;
+		}
+		.SearchBox
+		{
+			width: 100%;
+			display: grid;
+			grid-template-columns: 80px auto 40px;
+			/*border:1px solid black;*/
+			margin-left: 90px;
+
+		}
+		.nav2 ul
+		{
+			display: grid;
+			grid-template-columns: auto auto;
+			box-sizing: border-box;
+		} 
+		.nav2 ul li
+		{
+			display: inline-block;
+			list-style: none;
+			line-height: 35px;
+			text-align: center;
+			box-sizing: border-box;
+			/*border: 1px solid black;*/
+		}
+		.SearchBox input[type="search"]
+		{
+			height: 35px;
+			vertical-align: center;
+			margin: 5px 0;
+            padding-left: 5px;
+			/*text-align: center;*/
+   			font-size: 15px;
+   			text-indent: 20px;
+			border-top-color: red;
+			border-bottom-color: red;
+			border-bottom-width: 1px;
+			border-top-width: 1px;
+			outline-color: yellow;
+		}
+		.SearchBox select
+		{
+            width: 80px;
+			height: 35px;
+            padding-left: 10px;
+			margin: 5px 0px;
+			border-bottom-left-radius: 20px;
+			border-top-left-radius: 20px;
+			background-color: red;
+			color: #ffffff;
+			outline: none;
+		}
+
+		.SearchBox a
+		{
+			height: 35px;
+			margin: 5px 0px;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+			/*border: 1px solid black;*/
+			background-color: red;
+			color: #ffffff;
+			outline: none;
+		}
+		.SearchBox a:hover, select:hover
+		{
+			background-color: #FA1E1E;
+			color: white;
+			transition: 0.2s ease;
+		}
+		.SearchBox a i
+		{
+			line-height: 35px;
+			margin-left: 10px;
+		}
+		.nav2 ul li a
+		{
+			text-decoration: none;
+			line-height: 40px;
+			display: block;
+			/*background-color: #55EFF9;*/
+			/*border: 1px solid black;*/
+			background-color: rgba(0,0,0,0.2);
+			color: white;
+			box-shadow: 0px 1px 2px 0px black;
+			text-shadow: 1px 1px 2px black;
+		}
+		.nav2 ul li a:hover 		/*......................Page Link Hover Effect.......................*/
+		{
+			transition: 0.2s ease;
+			background-color: rgba(0,255,0,0.6);
+			color: white;
+		}
+		.signUp
+		{
+			margin-left: 200px;
+		}
+		i
+		{
+			margin-right: 20px;
+		}
+
+
+/*.............................................................................................................................................*/
+
+
+		.banner-comtainer 			/*......................Banner Container.......................*/
+		{
+			/*background-image: url("Images/Banner.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;*/
+			width: 100%;
+			height: 250px;
+			border: 1px solid black;
+			/*background-color: #DB19F2;*/
+		}
+		.container	/*......................Slider Container.......................*/
+		{ width: 100%; height: 250px;}
+		.container .ism-slider
+		{margin-left: auto; margin-right: auto;}
+
+
+/*................................................................................................................................................*/
+
+
+		.musicPlayer-container 	/*......................Music Player Container.......................*/
+		{
+			width: 100%;
+			height: 500px;
+			display: grid;
+			grid-template-columns: auto 502px;
+			/*border: 1px solid black;*/
+			box-shadow: 0px 2px 5px 2px black;
+		}
+		.musicPlayer-section 		/*......................Music Player Section.......................*/
+		{
+			display: grid;
+			grid-template-rows: 50px 35px;
+			background-color: #333;
+			border: 1px solid black;
+		}
+		.musicPlayer-subsection 	/*......................Music Player Sub Section.......................*/
+		{
+			/*border: 1px solid black;*/
+		}
+
+
+		.musicPlayer-AudioPlayer-section  /*............Music Player - Audio Player section...........................*/
+		{
+			/*background-color: #13A1F2;*/
+		}
+
+
+/*......................................Start CSS Of Audio Player Section............................................*/
+
+		.AudioPlayerContainer
+		{
+			width: 500px;
+			height: 500px;
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+			display: block;
+			background-color: #333;
+			border: 1px solid #222;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			-webkit-box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.15 ), 0 0 3px rgba( 0, 0, 0, 0.5 );
+			-moz-box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.15 ), 0 0 3px rgba( 0, 0, 0, 0.5 );
+			box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.15 ), 0 0 3px rgba( 0, 0, 0, 0.5 );
+			background-image: -ms-linear-gradient(top, #444444 0%, #111111 100%);
+			background-image: -moz-linear-gradient(top, #444444 0%, #111111 100%);
+			background-image: -o-linear-gradient(top, #444444 0%, #111111 100%);
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444444), color-stop(1, #111111));
+			background-image: -webkit-linear-gradient(top, #444444 0%, #111111 100%);
+			background-image: linear-gradient(to bottom, #444444 0%, #111111 100%);
+		}
+		.AudioPlayerContainer
+		{
+			display: grid;
+			grid-template-rows: 290px 100px 110px;
+		}
+		.AlbumArt, .AboutAudio, .ToolsAudio
+		{
+			border: 1px solid black;
+			/*background-color: yellow;*/
+		}
+		#AlbumArtImage
+		{
+			margin: 12px 12px;
+			width: 260px;
+			height: 260px;
+			bottom: 1px solid black;
+			background-color: #3A3838;
+			border-radius: 4px;
+			box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .5);
+			background-image: url('AlbumArt/ELKDTAL.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 260px 260px;
+		}
+		/*#AlbumArtImage img
+		{
+			width: 100%;
+			height: auto;
+			border-radius: 4px;
+		}*/
+		.AboutAudio
+		{
+			display: grid;
+			grid-template-rows: 32px 32px 32px;
+			background-color: #3D3B3B;
+			box-shadow: 0px -1px 2px 0px black;
+			/*border: 1px solid black;*/
+		}
+		.TitleArtistAlbum
+		{
+			display: grid;
+			grid-template-columns: 90px auto;
+			/*border: 1px solid black;*/
+		}
+		.TitleArtistAlbum p
+		{
+			width: 95%;
+			line-height: 35px;
+			color: white;
+			font-family: sans-serif;
+		}
+		/*.TitleArtistAlbum img
+		{
+			width: 20px;
+			height: 20px;
+			margin: 5px 40px;
+			float: left;
+			background-color: white; 
+			color: white;
+		}*/
+		.TitleArtistAlbum i
+		{
+			margin: 5px 40px;
+			float: left;
+			color: white;
+			line-height: 25px;
+		}
+
+		.ToolsAudio
+		{
+			display: grid;
+			grid-template-rows: 50px auto;
+		}
+		.ProgBarTime, .ActionBtn
+		{
+			/*border:1px solid black;*/
+		}
+		.ActionBtn
+		{
+			text-align: center;
+			display: grid;
+			grid-template-columns: auto auto auto auto auto;
+		}
+		.ActionBtn #replaybtn, #backwardbtn, #playbtn, #forwardbtn, #randombtn
+		{
+			color: white;
+			background-color: rgba(255, 255, 255, 0.1);
+			/*border: 1px solid black;*/
+			box-shadow: 0px 0px 1px 1px black;
+		}
+		.ActionBtn p
+		{
+			line-height: 0px;
+			/*border:1px solid black;*/
+		}
+		.ProgBarTime
+		{
+			display: grid;
+			grid-template-rows: 20px 24px;
+			/*border-radius: 4px;*/
+			border-bottom-left-radius: none;
+			border-bottom-right-radius: none;
+			background-color: #393737;
+			box-shadow: 0px 0px 1px 1px black;
+		}
+		.ProgBarTime .ProgBarbtn
+		{
+			/*border:1px solid black;*/
+			/*background-color: green;*/
+		}
+		.TimeVolumebtn
+		{
+			display: grid;
+			grid-template-columns: 100px auto 100px;
+			/*background-color: red;*/
+		}
+
+		#VolumeContainer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#VolumeContainer i
+		{
+			width: 20px;
+			/* border: 1px solid; */
+			color: white;
+			cursor: pointer;
+			margin: 0;
+		}
+
+		#VolumeContainer #volume_value {
+			color: #fff;
+			width: 30px;
+			/* border: 1px solid; */
+		}
+		#VolumeContainer #prgvol {
+			margin: auto 8px;
+		}
+
+		#prgvol
+		{
+			width: 50%;
+			height:5px;
+			border-radius:2.5px;
+			background-color:white;
+			appearance:none;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			outline:none;
+		}
+		#prgvol::-webkit-slider-thumb
+		{
+			-webkit-appearance: none;
+			-moz-appearance:none;
+			appearance: none;
+			width: 15px;
+			height: 15px;
+			background: rgba(255,255,255,0.8); 
+			border:1px solid black;
+			cursor: pointer;
+			border-radius:50%;
+			outline:none;
+		}
+		#prgvol::-moz-range-thumb
+		{
+			width: 15px; 
+			height: 15px;
+			background: rgba(255,255,255,0.8);
+			border:1px solid black;
+			cursor: pointer;
+			outline:none;
+			border-radius:50%;
+		}
+
+		#prg
+		{
+			margin-left: 23px;
+			width: 90%;
+			height:5px;
+			border-radius:2.5px;
+			background-color:white;
+			appearance:none;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			outline:none;
+		}
+
+		#prg::-webkit-slider-thumb
+		{
+			-webkit-appearance: none;
+			-moz-appearance:none;
+			appearance: none;
+			width: 15px;
+			height: 15px;
+			background: rgba(255,255,255,0.8); 
+			border:1px solid black;
+			cursor: pointer;
+			border-radius:50%;
+			outline:none;
+		}
+
+		#prg::-moz-range-thumb
+		{
+			width: 15px; 
+			height: 15px;
+			background: rgba(255,255,255,0.8);
+			border:1px solid black;
+			cursor: pointer;
+			outline:none;
+			border-radius:50%;
+		}
+		#crntTime
+		{
+			margin-top: 12px;
+			margin-left: 20px;
+			line-height: 0px;
+			color: white;
+		}
+		#ttlTime
+		{
+			margin-top: 12px;
+			margin-left: 40px;
+			line-height: 0px;
+			color: white;
+		}
+		.fa-retweet, .fa-fast-forward, .fa-play, .fa-fast-backward, .fa-random, .fa-pause
+		{
+			width: 10px;
+			font-size: 24px;
+			color: white;
+			line-height: 50px;
+			text-shadow: 0px 0px 5px black;
+			margin-top: 4px;
+			margin-right: 8px;
+		}
+
+		/* .fa-volume-up,
+		{
+			width: 10px;
+			font-size: 24px;
+			color: white;
+			line-height: 20px;
+			text-shadow: 0px 0px 5px black;
+			margin-top: 4px;
+			margin-right: 8px;
+		} */
+
+		.fa-retweet:hover, .fa-fast-forward:hover, .fa-play:hover, .fa-fast-backward:hover, .fa-random:hover, .fa-volume-up:hover, .fa-pause:hover
+		{
+			color: rgba(255,255,255,0.9);
+			text-shadow: none;
+			font-size: 23px;
+			transition: 0.2s ease;
+			cursor: pointer;
+		}
+
+	/*......................................End CSS Of Audio Player Section............................................*/
+
+
+
+
+		.typeOfSongList ul    /*......................Music Player Type Of Song List.......................*/
+		{
+			display: grid;
+			grid-template-columns: auto auto auto;
+		}
+		.typeOfSongList ul li
+		{
+			display: block;
+			list-style: none;
+			box-sizing: border-box;
+			text-align: center;
+			line-height: 50px;
+			/*border: 1px solid black;*/
+		}
+		.typeOfSongList ul li a
+		{
+			font-family: sans-serif;
+			text-decoration: none;
+			display: block;
+			background-color: rgba(0,0,0,0.2);
+			color: rgba(255,255,255,0.8);
+			box-shadow: 0px 2px 2px 0px black;
+			text-shadow: 1px 1px 2px black;
+		}
+		.typeOfSongList ul li a:hover
+		{
+			transition: 0.2s ease;
+			color: rgba(255,255,255,0.6);
+			background-color: #4A4848;
+		}
+		.typeOfSongList ul li a:active
+		{
+			
+			color: royalblue;
+		}
+
+		.typeOfSongList2 ul    /*......................Music Player Type Of Song List.......................*/
+		{
+			display: grid;
+/*			grid-template-columns: 250px 250px 250px auto;*/
+            grid-template-columns: auto auto auto auto;
+		}
+		.typeOfSongList2 ul li
+		{
+			grid-column-gap: 5px;
+			display: block;
+			list-style: none;
+			box-sizing: border-box;
+			text-align: center;
+			line-height: 35px;
+/*			border: 1px solid black;*/
+		}
+		.typeOfSongList2 ul li a
+		{
+			display:block;
+			text-decoration: none;
+			background-color: rgba(0,0,0,0.2);
+			color: white;
+			text-shadow: 1px 1px 2px black;
+			box-shadow: 0px 1px 5px 0px black;
+		}
+		.typeOfSongList2 ul li a:hover
+		{
+			transition: 0.2s ease;
+			background-color: rgba(0,255,0,0.5);
+			color: white;
+		}
+
+			.listOfSongs	/*..........................List of Songs..............................*/
+		{
+			/*border : 1px solid black;*/
+			padding: 5px;
+			font: 20px sans-serif;
+			width: 100%;
+			height: 405px;
+			overflow: auto;
+		}
+		.listOfSongs ul
+		{
+			width: 100%;
+			display: inline-block;
+			line-height: 50px;
+		}
+		.listOfSongs ul li
+		{
+			display: block;
+			box-shadow: 0px 0px 1px 0px black;
+			color: white;
+			text-shadow: 1px 1px 1px black;
+			text-indent: 20px;
+		}
+		.listOfSongs ul li:nth-child(even)
+		{
+			color: red;
+		}
+		.listOfSongs ul li:nth-child(odd)
+		{
+			background-color: rgba(0,0,0,0.1);
+			color: green;
+		}
+		.listOfSongs ul li:hover
+		{
+			transition: 0.2s ease;
+			background-color: rgba(255,255,255,0.2);
+			color: yellow;
+			text-shadow: none;
+		}
+
+
+/*............................................................................................................................................*/
+
+
+		.latestMusic-container 	/*......................Latest Music Container.......................*/
+		{
+			margin-top: 20px;
+			width: 100%;
+			height: 1000px;
+			display: grid;
+			grid-template-rows: 50px 250px 50px 250px 50px 250px;
+			grid-row-gap: 20px;
+			/*border: 1px solid black;*/
+			background-color: grey;
+		}
+		.latestMusic-subcontainer 	/*......................Latest Music Sub Container.......................*/
+		{
+			display: grid;
+			grid-template-columns: auto auto auto auto auto;
+/*			grid-column-gap: 145px;*/
+            column-gap: 100px;
+            text-align: center;
+            margin: 5px auto;
+/*			border: 1px solid black;*/
+/*			box-shadow: 0px 0px 5px 0px black;*/
+			z-index: 0;
+		}
+
+	
+ 	/*......................Latest Music Sub Container-1.......................*/
+
+		.latestMusic-subcontainer1, .latestMusic-subcontainer2, .latestMusic-subcontainer3,.latestMusic-subcontainer4,
+		.latestMusic-subcontainer5, .latestMusic-subcontainer6, .latestMusic-subcontainer7, .latestMusic-subcontainer8,
+		.latestMusic-subcontainer9, .latestMusic-subcontainer10, .latestMusic-subcontainer11, .latestMusic-subcontainer12,
+		.latestMusic-subcontainer13, .latestMusic-subcontainer14, .latestMusic-subcontainer15
+		{
+/*			border: 1px solid black;*/
+			box-shadow: 0px 0px 5px 0px black;
+			border-radius: 4px;
+            width: 260px;
+            height: auto;
+            background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.latestMusic-subcontainer1
+		{
+			background-image: url("AlbumArt/ELKDTAL.jpg");
+		}
+		.latestMusic-subcontainer2
+		{
+			background-image: url("AlbumArt/TOTALDHAMAL.jpg");
+		}
+		.latestMusic-subcontainer3
+		{
+			background-image: url("AlbumArt/Kalank.jpg");
+		}
+		.latestMusic-subcontainer4
+		{
+			background-image: url("AlbumArt/kesari.jpg");
+		}
+		.latestMusic-subcontainer5
+		{
+			background-image: url("AlbumArt/LukaChuppi2.jpg");
+		}
+		.latestMusic-subcontainer6
+		{
+			background-image: url("AlbumArt/GallanTeriya2.jpg");
+        }
+		.latestMusic-subcontainer7
+		{
+			background-image: url("AlbumArt/PegGiney.jpg");
+		}
+		.latestMusic-subcontainer8
+		{
+			background-image: url("AlbumArt/INeedYa.jpg");
+		}
+		.latestMusic-subcontainer9
+		{
+			background-image: url("AlbumArt/Chehre.jpg");
+		}
+		.latestMusic-subcontainer10
+		{
+			background-image: url("AlbumArt/TereNaal.jpg");
+		}
+		.latestMusic-subcontainer11
+		{
+			background-image: url("AlbumArt/LetMeLoveYou.jpg");
+			background-size: 260px auto;
+			background-repeat: no-repeat;
+		}
+		.latestMusic-subcontainer12
+		{
+			background-image: url("AlbumArt/JB.jpg");
+			background-size: 260px auto;
+			background-repeat: no-repeat;
+		}
+		.latestMusic-subcontainer13
+		{
+			background-image: url("AlbumArt/OrangeCarmel.jpg");
+			background-size: 260px auto;
+			background-repeat: no-repeat;
+		}
+		.latestMusic-subcontainer14
+		{
+			background-image: url("AlbumArt/Singing-PNG-Photo.png");
+		}
+		.latestMusic-subcontainer15
+		{
+			background-image: url("AlbumArt/Fergie.jpg");
+		}
+
+		.typeOfSong  /*......................Type Of Song.......................*/
+		{
+			background-color: rgba(0,0,0,0.5);
+			line-height: 50px;
+			text-shadow: 1px 1px 2px black;
+			color: white;
+			/*border: 1px solid black;*/
+			text-align: center;
+			box-shadow: 0px 0px 4px 0px black;
+		}
+
+/*....................................................................................................................................................*/
+
+		footer 	/*......................Footer.......................*/
+		{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 100%;
+			height: 200px;
+			background-color: #333;
+			/*background-color: rgba(0,0,0,0.2);*/
+			box-shadow: 0px 0px 5px 0px black;
+			/*border: 1px solid black;*/
+			display: grid;
+			grid-template-rows: 60% 40%;
+		}
+		footer .footerSection1
+		{
+			display: grid;
+			grid-template-columns: 50% 50%;
+			/*border: 1px solid black;*/
+		}
+		.footerSection1 .TagLine
+		{
+			color: rgba(0,0,0,.8);
+			margin: 10px 25px;
+			line-height: 30px;
+			text-align: center;
+			font-family: sans-serif;
+			font-weight: lighter;
+			font-size: 15px;
+			/*border: 1px solid black;*/
+		}
+		.FoolowUs
+		{
+			display: grid;
+			grid-template-columns: 30% 70%;
+		}
+		.FoolowUs h2
+		{
+			height: 80px;
+			font-size: 30px;
+			margin-top: 18px;
+			margin-left: 10px;
+			padding-left: 20px;
+			line-height: 80px;
+			color: #094FDD;
+			text-shadow: 0px 0px 2px black;
+			border-left: 1px solid rgba(0,0,0,0.6);
+			/*border: 1px solid black;*/
+		}
+		.FoolowUs ul
+		{
+			list-style: none;
+		}
+		.FoolowUs ul li
+		{
+			width: 100%;
+			margin: 30px 14px;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 5px 1px black;
+			text-shadow: 0px 0px 1px black;
+			background-color: rgba(255,255,255,0.9);
+			/*border: 1px solid black;*/
+		}
+		.FoolowUs ul li:hover
+		{
+			box-shadow: 0px 0px 5px 2px gold;
+			transition: 0.2s ease;
+
+		}
+		.FoolowUs ul li i
+		{
+			font-size: 30px;
+			margin-left: 10px;
+			line-height: 50px;
+		}
+		.fa-facebook
+		{
+		color: #3b5998;
+		}
+		.fa-instagram
+		{
+		color: #fb5958;
+		}
+		.fa-linkedin
+		{
+		color: #007bb5;
+		}
+		.fa-github
+		{
+		color: #6e5494;
+		}
+		.fa-pinterest
+		{
+		color: #c8232c;
+		}
+		.fa-google-plus
+		{
+		color: #d34836;
+		}
+		hr
+		{
+			width: 40px;
+			transform: rotate(90deg);
+		}
+
+		footer .footerSection2
+		{
+			/*border: 1px solid black;*/
+			text-align: center;
+		}
+		.footerSection2 a
+		{
+			display: inline-block;
+			padding: 10px;
+			padding-top: 0px;
+			text-decoration: none;
+			color: lightblue;
+			/*color: rgba(0,0,0,0.8);*/
+		}
+		.footerSection2 a span
+		{
+			border-left: 1px solid lightblue;
+			border-right: 1px solid lightblue;
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+		.footerSection2 .CopyRight
+		{
+			font-family: sans-serif;
+			font-size: 14px;
+			color: skyblue;
+			font-weight: lighter;
+			/*color: rgba(255,255,255,0.4);*/
+			padding: 8px;
+			/*border: 1px solid black;*/
+			letter-spacing: 2px;
+		}
+		.fa-copyright
+		{
+			margin-right: 4px;
+		}
